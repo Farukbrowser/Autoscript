@@ -1,4 +1,4 @@
-# AutoInstaller / SSH WEBSOCKET / OpenVPN
+# Faruk VPN Script / SSH WEBSOCKET / OpenVPN
  
 UBUNTU 18
 DEBIAN 9
@@ -27,7 +27,10 @@ OpenVPN SSL:     587
 
 ## SCRIPT LINK HERE
 
+
+```html
 wget -O websocket-sshovpn.sh https://raw.githubusercontent.com/Farukbrowser/Autoscript/main/websocket-sshovpn.sh; chmod +x websocket-sshovpn.sh; setarch $(uname -m) -R /root/websocket-sshovpn.sh
+```
 
 
 
@@ -54,7 +57,10 @@ Squid:           8080
 
 ## SCRIPT LINK HERE
 
+```html
 wget -O slowdns_sshwebsocket https://raw.githubusercontent.com/Farukbrowser/Autoscript/main/slowdns_sshwebsocket; chmod +x slowdns_sshwebsocket; setarch $(uname -m) -R /root/slowdns_sshwebsocket
+```
+
 
 
 
