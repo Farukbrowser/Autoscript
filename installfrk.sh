@@ -94,4 +94,4 @@ echo -e "          \033[1;33mINSTALLATION COMPLETE!\033[0m          "
 echo ""
 echo -e "To open the menu, use the command: \033[1;33mslowdns\033[0m"
 cd
-rm install
+rm installfrk
