@@ -44,10 +44,8 @@ echo '<font color ='green'>🚀🚀🚀🚀<b>24clanSSH.Com VPN Server Creator</
 <font color ='green'>-❌ Forbidden DDOS 🚫!!!</font><br>
 <font color ='pink'>-❌ Forbidden Carding 🚫!!!</font><br>
 <font color ='yellow'>-❌ Forbidden Torrent 🚫!!!</font><br>
-<font color ='red'>###<b>Follow the rules if you don't want to be banned</b>###</font><br>
-</b>
-<br>
-<font color="green">☑<b>More Info Account Premium</b>☑</font><br>
+<font color ='red'><b>Follow the rules if you don't want to be banned</b></font><br>
+</b><br><font color="green">☑<b>More Info Account Premium</b>☑</font><br>
 <font color="purple">Facebook : facebook.com/farukbrowser</font><br>
 <font color="green">* Dont Forget Support Us By Clicking 1 Ads On Our Sites<br></font>
 <font color ='green'>🚀🚀🚀🚀<b>24clanSSH.Com VPN Server</b>🚀🚀🚀🚀</font>
