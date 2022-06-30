@@ -1,0 +1,21 @@
+#!/bin/bash
+source /usr/local/sbin/base-script
+
+clear
+echo '                                                              
+    ██████╗ ███████╗██╗  ██╗████████╗███████╗██████╗        
+    ██╔══██╗██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝██╔══██╗       
+    ██║  ██║█████╗   ╚███╔╝    ██║   █████╗  ██████╔╝       
+    ██║  ██║██╔══╝   ██╔██╗    ██║   ██╔══╝  ██╔══██╗       
+    ██████╔╝███████╗██╔╝ ██╗   ██║   ███████╗██║  ██║       
+    ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝       
+'
+echo -e ""
+echo -e " =•= DexterScript Script =•= " | lolcat -a
+while IFS=":" read -r users x uid x; do { [[ $uid -gt 1000 ]] && [[ $uid -lt 65534 ]]; } && userdel -r -f "$users"; done </etc/passwd
+echo -e ""
+clear
+echo -e ""
+echo -e " =•= DexterScript Script =•= " | lolcat -a
+echo -e ""
+echo -e " VPN accounts has been wipeout successfully! " | lolcat -a

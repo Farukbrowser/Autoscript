@@ -1,0 +1,144 @@
+#!/bin/bash
+
+clear
+echo -e ""
+echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+echo -e ""
+echo -e "   [1] Reboot Every 1 Hour"
+echo -e "   [2] Reboot Every 2 Hours"
+echo -e "   [3] Reboot Every 12 Hours"
+echo -e "   [4] Reboot Once A Day"
+echo -e "   [5] Reboot Once A Week"
+echo -e "   [6] Reboot Once A Month"
+echo -e "   [7] Remove Reboot"
+echo -e "   [8] Exit"
+echo -e ""
+read -p "   Select from options [1-8]:  " Reboot_Sys
+echo -e ""
+
+sleep 3
+clear
+case $Reboot_Sys in
+		1)
+		clear
+		crontab -r
+	 echo -e "10 * * * * /sbin/reboot >/dev/null 2>&1" >> mycron
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '10 * * * * /sbin/reboot >/dev/null 2>&1' >> /etc/cron.d/mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+    echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+    echo -e " Auto-Reboot Set Every Hour"
+    echo -e ""
+    exit
+    ;;
+		2)
+		clear
+	 crontab -r
+	 echo -e "10 */6 * * * /sbin/reboot >/dev/null 2>&1" >> mycron
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '10 */6 * * * /sbin/reboot >/dev/null 2>&1' >> /etc/cron.d/mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+    echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+		echo -e " Auto-Reboot Set Every 2 Hours"
+		echo -e ""
+		exit
+		;;
+		3)
+		clear
+	 crontab -r
+	 echo -e "10 */12 * * * /sbin/reboot >/dev/null 2>&1" >> mycron
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '10 */12 * * * /sbin/reboot >/dev/null 2>&1' >> /etc/cron.d/mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+		echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+		echo -e " Auto-Reboot Set Every 12 Hours"
+		echo -e ""
+		exit
+		;;
+		4)
+		clear
+	 crontab -r
+	 echo -e "0 0 * * * /sbin/reboot >/dev/null 2>&1" >> mycron
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '0 0 * * * /sbin/reboot >/dev/null 2>&1' >> /etc/cron.d/mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+		echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+		echo -e " Auto-Reboot Set Once A Day Every 12 AM"
+		echo -e ""
+		exit
+		;;
+		5)
+		clear
+	 crontab -r
+	 echo -e "10 0 */7 * * /sbin/reboot >/dev/null 2>&1" >> mycron
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '10 0 */7 * * /sbin/reboot >/dev/null 2>&1' >> /etc/cron.d/mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+		echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+		echo -e " Auto-Reboot Set Once A Week"
+		echo -e ""
+		exit
+		;;
+		6)
+		clear
+	 crontab -r
+	 echo -e "10 0 1 * * /sbin/reboot >/dev/null 2>&1" >> mycron
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '10 0 1 * * /sbin/reboot >/dev/null 2>&1' >> /etc/cron.d/mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+		echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+		echo -e " Auto-Reboot Set Once A Month"
+		echo -e ""
+		exit
+		;;
+		7)
+		clear
+	 crontab -r
+     echo -e "*/1 * * * * sudo service ziproxy restart" >> mycron
+     #install new cron file
+     crontab mycron
+     echo '*/1 * * * * sudo service ziproxy restart' >> /etc/cron.d/mycron
+     service cron restart
+		echo -e ""
+    echo -e " =•= 24clanSSH VPN  Script By Farukbrowser =•= " | lolcat -a
+    echo -e ""
+		echo -e " Auto-Reboot Removed"
+		echo -e ""
+		exit
+		;;
+		8)
+		clear
+		exit
+		;;
+	esac
+service cron restart
